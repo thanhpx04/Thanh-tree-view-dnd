@@ -1,0 +1,19 @@
+modules:
+  jira:adminPage:
+    - key: thanh-tree-view-dnd-hello-world-admin-page
+      resource: main
+      resolver:
+        function: resolver
+      title: Thanh-tree-view-dnd
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+permissions:
+  content:
+    styles:
+      - 'unsafe-inline'
+app:
+  id: ari:cloud:ecosystem::app/a30be115-0472-4286-93c9-e71ee7ffa637
